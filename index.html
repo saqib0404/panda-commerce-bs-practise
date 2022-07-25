@@ -18,7 +18,7 @@
   <!-- Header -->
   <header class="container">
     <!-- nav starts -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="">
@@ -33,13 +33,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoe">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpacks</a>
+              <a class="nav-link" href="#backpack">Backpacks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
 
           </ul>
@@ -52,42 +52,45 @@
     <section class="top-banner">
       <div id="carouselExampleControls" class="carousel slide my-5 " data-bs-ride="carousel">
         <div class="carousel-inner border rounded-3">
-          <div class="carousel-item active bg-info p-5">
+          <div class="carousel-item active panda-bg-info p-5">
             <div class="row">
               <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center">
                 <h2>Cool Dude Headphone</h2>
-                <p>This is the best headphone in the world for people who just want to waste time in front of funky world.
+                <p>This is the best headphone in the world for people who just want to waste time in front of funky
+                  world.
                 </p>
                 <h1>$420</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn buynow-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
               </div>
             </div>
           </div>
-          <div class="carousel-item active bg-info p-5">
+          <div class="carousel-item active panda-bg-info p-5">
             <div class="row">
               <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center">
                 <h2>Mega LCD TV For Sports</h2>
-                <p>This is the best headphone in the world for people who just want to waste time in front of funky world.
+                <p>This is the best headphone in the world for people who just want to waste time in front of funky
+                  world.
                 </p>
                 <h1>$1200</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn buynow-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
               </div>
             </div>
           </div>
-          <div class="carousel-item active bg-info p-5">
+          <div class="carousel-item active panda-bg-info p-5">
             <div class="row">
               <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center">
                 <h2>X-Box for your living room</h2>
-                <p>This is the best headphone in the world for people who just want to waste time in front of funky world.
+                <p>This is the best headphone in the world for people who just want to waste time in front of funky
+                  world.
                 </p>
                 <h1>$600</h1>
-                <button class="btn btn-warning">Buy Now</button>
+                <button class="btn buynow-btn">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -118,19 +121,19 @@
     <section class="categories container">
       <div class="row g-4">
         <div class="col-md-6 col-lg-4 ">
-          <div class="d-flex align-items-center justify-content-around  border rounded-3 bg-warning">
+          <div class=" py-3 d-flex align-items-center justify-content-around  border rounded-3 bg-warning">
             <h1 class="text-white">Watch</h1>
             <img src="images/categories/watch.png" alt="">
           </div>
         </div>
         <div class="col-md-6 col-lg-4 ">
-          <div class="d-flex align-items-center justify-content-around  border rounded-3 bg-danger">
+          <div class=" py-3 d-flex align-items-center justify-content-around  border rounded-3 bg-danger">
             <h1 class="text-white">Bag</h1>
             <img src="images/categories/bag.png" alt="">
           </div>
         </div>
         <div class="col-md-6 col-lg-4 ">
-          <div class="d-flex align-items-center justify-content-around  border rounded-3 bg-info">
+          <div class="py-3 d-flex align-items-center justify-content-around  border rounded-3 bg-primary">
             <h1 class="text-white">Shoe</h1>
             <img src="images/categories/shoes.png" alt="">
           </div>
@@ -141,7 +144,7 @@
 
 
     <!-- Shoes section start -->
-    <div class="shoe-section  my-5">
+    <div class="shoe-section  my-5" id="shoe">
       <h1>Shoes</h1>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -150,10 +153,11 @@
             <div class="card-body">
               <h4 class="card-title">Supply 350</h4>
               <h3 class="card-title">$160</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -163,10 +167,11 @@
             <div class="card-body">
               <h4 class="card-title">Nike 360</h4>
               <h3 class="card-title">$180</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -176,10 +181,11 @@
             <div class="card-body">
               <h4 class="card-title">Red Airmax</h4>
               <h3 class="card-title">$200</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -189,7 +195,7 @@
 
 
     <!-- Backpack section starts -->
-    <section class="backpack-section my-5">
+    <section class="backpack-section my-5" id="backpack">
       <h1>Backpacks</h1>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -198,10 +204,11 @@
             <div class="card-body">
               <h4 class="card-title">Red Lallu Bag</h4>
               <h3 class="card-title">$160</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -211,10 +218,11 @@
             <div class="card-body">
               <h4 class="card-title">Nike 360</h4>
               <h3 class="card-title">$180</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -224,17 +232,40 @@
             <div class="card-body">
               <h4 class="card-title">Red Airmax</h4>
               <h3 class="card-title">$200</h3>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn buynow-btn">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Backpack section ends -->
+
+
+    <!-- Subscribe section starts -->
+    <section style="height:300px ;" class="subscribe-section d-flex justify-content-center align-items-center panda-bg-info" id="subscribe">
+      <div>
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales, specials and more</p>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn buynow-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Subscribe section ends -->
   </main>
+
+
+
+  <footer class="text-center ">
+    <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
