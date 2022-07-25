@@ -60,7 +60,7 @@
                   world.
                 </p>
                 <h1>$420</h1>
-                <button class="btn buynow-btn">Buy Now</button>
+                <button class="btn buynow-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -75,7 +75,7 @@
                   world.
                 </p>
                 <h1>$1200</h1>
-                <button class="btn buynow-btn">Buy Now</button>
+                <button class="btn buynow-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -90,7 +90,7 @@
                   world.
                 </p>
                 <h1>$600</h1>
-                <button class="btn buynow-btn">Buy Now</button>
+                <button class="btn buynow-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -98,12 +98,12 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -111,6 +111,33 @@
       </div>
     </section>
     <!-- slider end -->
+    <!------------
+       Modal
+    ------------ -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Subscription Needed!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <b>
+              Sir, to place order <br>
+            Go to our subscribe section. <br>
+            Enter you email and <span class="my-text-color">SUBSCRIBE</span>
+            </b>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="#subscribe" class="btn buynow-btn">Go To</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------
+       Modal
+    ------------ -->
   </header>
 
 
@@ -149,10 +176,12 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
           <div class="card h-100 border border-0 shadow">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">HOT OFFER</span>
             <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">Supply 350</h4>
-              <h3 class="card-title">$160</h3>
+              <h3 class="card-title text-danger"><del>$160</del></h3>
+              <h2 class="card-title fw-bold">$125</h2>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -230,8 +259,10 @@
           <div class="card h-100 border border-0 shadow">
             <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
             <div class="card-body">
+              <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">HOT OFFER</span>
               <h4 class="card-title">Red Airmax</h4>
-              <h3 class="card-title">$200</h3>
+              <h3 class="card-title text-danger"><del>$200</del></h3>
+              <h2 class="card-title fw-bold">$145</h2>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -262,7 +293,7 @@
   </main>
 
 
-
+  <!-- Footer -->
   <footer class="text-center ">
     <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
   </footer>
